@@ -1,0 +1,327 @@
+/*Общее*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  max-width: 1173px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Шапка */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+}
+.menu-logo {
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  width: 57px;
+  height: 57px;
+  background: url('https://pp.userapi.com/c841022/v841022805/18023/Pbx6u3xh6e0.jpg');
+  background-size: 100%;
+  border-radius: 50%;
+}
+.discription {
+  margin-left: 9px;/*отступ от аватара*/
+}
+.name {
+ display: block; /*Переносит 2й элемент на вторую строку*/
+  font-size: 16px;
+  font-weight: 800;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+}
+.menu-list a {
+  text-decoration: none;
+  color: #2b2a2c;
+  text-transform: uppercase;/*верхний регистр*/
+  font-weight: 800;
+  margin-right: 34px;
+}
+.menu-list a:hover {
+  border-bottom: 2px solid #2b2a2c;/*Подчеркивание при наведении*/
+}
+.menu-button {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 2px solid #2b2a2c;
+  padding: 13px 22px;
+}
+.menu-button:hover {
+  color: white;
+  background: #2b2a2c;
+}
+
+/* Баннер */
+.hero {
+  padding-top: 112px;
+  padding-bottom: 112px;
+  background: url('https://i.ibb.co/0rV2MtM/right-side.png') no-repeat right bottom;
+}
+.hero-subtitle {
+  font-size: 32px;
+}
+.hero-title {
+  font-size: 45px;
+  font-weight: 800;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.hero-description {
+  font-size: 18px;
+  color: #6a696b;
+}
+.hero-social {
+  margin-top: 26px;
+}
+.social {
+  display: inline-block;
+  width: 41px;
+  height: 41px;
+  margin-right: 10px;
+  color: #fff;
+  text-align: center;
+  line-height: 41px;
+}
+.behance-bg {
+  background-color: #1869ff;
+}
+.facebook-bg {
+  background-color: #3a5898;
+}
+.instagram-bg {
+  background-color: #13578a;
+}
+.vk-bg {
+  background-color: #56acef;
+}
+.hero-buttons {
+  margin-top: 42px;
+}
+.button {
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 800;
+  padding: 19px 34px;
+  background-color: #2b2a2c;
+  border-radius: 50px;
+  display: inline-block;
+}
+.button-primary {
+  color: #ffffff;
+  box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.25);
+  margin-right: 17px;
+  margin-bottom: 10px;
+}
+.button-o {
+  color: #6a696b;
+  border: 1px solid #6a696b;
+  background: transparent;
+}
+
+/* Портфолио */
+.project {
+  padding: 97px 0;
+}
+.project-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 91px;
+}
+.project-card {
+  min-height: 370px;
+  width: 370px;
+  border-radius: 10px 10px;
+  overflow: hidden; /*изображение не выходит за пределы родительского блока*/
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+}
+.project-card__image {
+  height: 300px;
+}
+.landing-page {
+  background: url('https://novator.io/wp-content/uploads/2018/09/landing-page_mesa_de_trabajo_1_0.png') center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.corparite {
+  background: url('http://www.fainaidea.com/wp-content/uploads/2015/03/1287318523.jpg') center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.online-store {
+  background: url('https://www.swe.ru/viewImg.php?img_id=16&showtext=0&tabname=Templates') center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.online-store-2 {
+  background: url('https://cartenergy.ru/assets/sell/electronics_store_design_1.jpg?1379061487') center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hotel {
+  background: url('https://m.umi.ru/images/cms/data/landing_hotel.png') center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item-6 {
+  background: url('https://img-fotki.yandex.ru/get/6731/65513451.e2/0_c1a68_43c2d90_XL.jpg') center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item-7 {
+  background: url('https://myownconference.cloud/b/ru/wp-content/uploads/2018/08/Tools-Of-The-Trade-Facebook-Post.png') center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item-8 {
+  background: url('https://seolead.pro/wp-content/uploads/2015/10/6-lending.jpg') center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item-9 {
+  background: url('http://www.interface.ru/iarticle/img/36477_51925657.jpg') center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.project-card__info {
+  padding: 19px 13px;
+}
+.project-category {
+  display: block;
+  font-size: 12px;
+  color: #2b2a2c;
+}
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+/* Обо мне */
+.about {
+  margin-top: 172px;
+}
+.about-info {
+  display: flex;
+  justify-content: flex-end;
+}
+.about-info-text {
+  width: 471px;  
+}
+.about-title {
+  color: #2b2a2c;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: 800;
+  margin-bottom: 42px;
+}
+.about-text {
+  color: #717072;
+  font-size: 12px;
+}
+
+/* Подвал */
+.footer {
+  background-color: #2b2a2c;
+  padding: 20px 0;
+  color: #8d8d8e;
+}
+.footer a {
+  color: #8d8d8e;
+  text-decoration: none;
+}
+.footer-info {
+  display: flex;
+  justify-content: space-between
+}
+.footer-text {
+  display: flex;
+  align-items: center;
+}
+.copyright {
+  padding-right: 16px;
+  margin-right: 16px;
+  border-right: 1px solid #8d8d8e; 
+  font-style: 14px;
+}
+.footer-social__link {
+  font-size: 23px;
+  margin-left: 14px;
+}
+.footer-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-menu a {
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 30px;
+}
+.footer-button {
+  font-size: 14px;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 1px solid #8d8d8e;
+  padding: 11px 23px;
+ }
+@media (max-width: 1200px) {
+  .container {
+    width: 965px;
+  }
+  .project-card {
+    width: 48%;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 760px;
+  }
+   .project-card {
+   width: 48%;
+  }
+  .footer-info {
+    font-size: 12px;
+  }
+  .footer-social {
+    display: none;
+  }
+  .footer-menu a {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .discription {
+    font-size: 12px;
+  }
+  .menu-list {
+    display: none;
+  }
+  .container {
+    width: 95%;
+  }
+  .hero {
+    padding-bottom: 550px;
+    padding-top: 30px;
+  }
+   .project-card {
+   width: 95%;
+     margin: 30px auto;
+  }
+}
